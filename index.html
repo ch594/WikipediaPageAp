@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Wikipedia Page Links Game</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="request.js"></script>
+	<script src="test.js"></script> 
+	<meta charset="UTF-8">
+</head>
+
+<body>
+
+	<header class = "header">
+		<div class = "header-text">
+			<h2 id = "title-text">Wikipedia Page Links Game</h2>
+		</div>
+	</header>
+	
+	<section class = "main">
+		<div class = "app-info">
+			<p class="info-text">Type a name for the desired end article. The default is "Philosophy. Then click 
+			the generate random button. This brings up the page links of a random Wikipedia page.
+			Your goal is to get to the end article in as few tries as possible. Note only a maximum
+			of 500 links will be displayed.</p>
+		</div>
+		<div class="input-area-stuff">
+			<input type="text" value="Philosophy" id ="desired-val-text"></input>
+			<button type="button" class="btn" id="generate-btn">Generate Random Links</button> 
+		</div>
+		<section class="result-page">
+			<p id="curr-page-title">Current Page: Title of Page</p>
+			<p id="page-clicked-count">Current Count: 0</p>
+			<p id="page-goal-reached"></p>
+		</section>
+		<section class="result-list">		
+		</section>
+		
+	</section>
+</body>
+</html>	
